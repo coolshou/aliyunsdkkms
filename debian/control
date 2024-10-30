@@ -1,0 +1,29 @@
+Source: aliyunsdkkms
+Section: python
+Priority: optional
+Maintainer: coolshou <coolshou2060@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-setuptools,
+ python3-all,
+#Testsuite: autopkgtest-pkg-python
+Standards-Version: 4.6.2
+Homepage: https://pypi.org/project/aliyun-python-sdk-kms
+#Vcs-Browser: https://salsa.debian.org/debian/aliyunsdkkms
+#Vcs-Git: https://salsa.debian.org/debian/aliyunsdkkms.git
+
+Package: python3-aliyunsdkkms
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${python3:Depends},
+ ${misc:Depends},
+Description: Aliyun Python SDK  (Python 3)
+ Aliyun Python SDK is the official software development kit. It makes things 
+ easy to integrate your Python application, library, or script with Aliyun 
+ services.
+ .
+ This package installs the library for Python 3.
+
